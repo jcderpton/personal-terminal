@@ -1,0 +1,17 @@
+[push]
+  default = tracking
+[color]
+  ui = auto
+[core]
+  whitespace = trailing-space,space-before-tab
+[diff]
+  renames = copies
+  mnemonicprefix = true
+[merge]
+  tool = meld
+[mergetool]
+  cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[rerere]
+  enabled = true
+[include]
+  path = ~/.git-local
