@@ -13,5 +13,11 @@
   cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 [rerere]
   enabled = true
+[alias]
+  show-large-files  = !bash ~/.bin/show-large-files.sh
+  purge-large-files = !bash ~/.bin/purge-large-files.sh
+  back-to-master    = !perl ~/.bin/back-to.pl master
+  update            = !bash ~/.bin/update.sh
+  back-to           = !perl ~/.bin/back-to.pl
 [include]
   path = ~/.git-local
