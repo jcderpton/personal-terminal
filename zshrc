@@ -23,9 +23,9 @@ EOBUNDLES
 antigen bundles <<EOBUNDLES
   Tarrasch/zsh-autoenv
   unixorn/autoupdate-antigen.zshplugin
-  zsh-users/zsh-completions
   zsh-users/zsh-history-substring-search
   zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-completions
 EOBUNDLES
 
 antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
