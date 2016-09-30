@@ -8,12 +8,12 @@ sub main {
 
   my $branch = $_[0];
 
-  if ($branch) {
-    my $exit = system("git checkout $branch");
+  $branch = 'master' if not $branch;
 
-    if ($exit != 0) {
-      return $exit;
-    }
+  my $exit = system("git checkout $branch");
+
+  if ($exit != 0) {
+    return $exit;
   }
 
   my @branches = split(/\n/, `git branch | grep -v '*' | grep -v 'master'`);
