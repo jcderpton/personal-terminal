@@ -14,7 +14,6 @@ antigen bundles <<EOBUNDLES
   nyan
   ruby
   sudo
-  tmux
   vagrant
   web-search
 EOBUNDLES
@@ -40,8 +39,7 @@ CASE_SENSITIVE="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # User configuration
-export PATH=/opt/jruby/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$PATH:/usr/local/sbin:/usr/sbin:/sbin"
 export apt_pref=apt-get
 
 # You may need to manually set your language environment
