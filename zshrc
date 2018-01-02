@@ -28,7 +28,7 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-completions
 EOBUNDLES
 
-antigen theme caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+antigen theme tjkirch
 
 antigen apply
 
