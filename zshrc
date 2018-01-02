@@ -14,7 +14,6 @@ antigen bundles <<EOBUNDLES
   nyan
   ruby
   sudo
-  tmux
   vagrant
   web-search
 EOBUNDLES
