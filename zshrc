@@ -25,7 +25,6 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-history-substring-search
   zsh-users/zsh-syntax-highlighting
   zsh-users/zsh-completions
-  greymd/docker-zsh-completion
 EOBUNDLES
 
 antigen theme tjkirch
