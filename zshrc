@@ -25,11 +25,10 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-history-substring-search
   zsh-users/zsh-syntax-highlighting
   zsh-users/zsh-completions
+  greymd/docker-zsh-completion
 EOBUNDLES
 
 antigen theme tjkirch
-
-antigen apply
 
 export EDITOR="vim"
 export USE_EDITOR=$EDITOR
@@ -39,18 +38,21 @@ CASE_SENSITIVE="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$PATH:/usr/local/sbin:/usr/sbin:/sbin"
+#export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$PATH:/usr/local/sbin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 export apt_pref=apt-get
 
 # You may need to manually set your language environment
 export LANG=en_GB.UTF-8
 
-alias reload="source ~/.zshrc"
+alias reload=". ~/.zshrc"
 alias tmux="TERM=xterm-256color tmux"
 alias g='git'
 alias c='clear'
 
 # Apply local settings if applicable
 if [ -f ~/.local-additions ]; then
-  source ~/.local-additions
+  . ~/.local-additions
 fi
+
+antigen apply
