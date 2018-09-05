@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-curl -L gt.io/antigen > $SCRIPT_DIR/antigen.zsh
+curl -L git.io/antigen > $SCRIPT_DIR/antigen.zsh
 
 ln -s $SCRIPT_DIR/ ~/.shell_config
 ln -s $SCRIPT_DIR/gitconfig ~/.gitconfig
