@@ -6,7 +6,7 @@ if [ -d $HOME/.zsh-completions ]; then
 fi
 
 # antigen
-source "$HOME/.shell_config/antigen.zsh"
+source ~/.shell_config/antigen.zsh
 antigen use oh-my-zsh
 
 # Regular bundles
@@ -16,7 +16,6 @@ antigen bundles <<EOBUNDLES
   debian
   history
   jira
-  nyan
   ruby
   sudo
   vagrant
@@ -43,7 +42,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # User configuration
 #export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$PATH:/usr/local/sbin:/usr/sbin:/sbin"
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 export apt_pref=apt-get
 
 # You may need to manually set your language environment
