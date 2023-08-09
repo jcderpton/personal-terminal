@@ -9,6 +9,10 @@
 " properly set to work with the Vim-related packages available in Debian.
 runtime! debian.vim
 
+if &term =~ '256color'
+  set t_ut=
+endif
+
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,11 +23,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lepture/vim-jinja'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
+Plugin 'hashivim/vim-terraform'
 
 filetype plugin indent on
 let g:airline#extensions#tabline#enabled = 1
@@ -70,7 +75,7 @@ syntax enable
 set tabstop=2
 set shiftwidth=2
 set t_Co=256
-set background=dark
+set background=light
 set autoread
 set ignorecase
 set smartcase

@@ -1,3 +1,7 @@
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 
 # Autocompletion
@@ -31,7 +35,8 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-completions
 EOBUNDLES
 
-antigen theme tjkirch
+# antigen theme tjkirch
+antigen theme romkatv/powerlevel10k
 
 export EDITOR="vim"
 export USE_EDITOR=$EDITOR
@@ -65,3 +70,6 @@ if [ -d $HOME/.local-additions ]; then
 fi
 
 antigen apply
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
