@@ -75,7 +75,7 @@ syntax enable
 set tabstop=2
 set shiftwidth=2
 set t_Co=256
-set background=light
+set background=dark
 set autoread
 set ignorecase
 set smartcase

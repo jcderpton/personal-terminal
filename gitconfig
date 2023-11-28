@@ -17,6 +17,6 @@
   show-large-files  = !bash ~/.bin/show-large-files.sh
   purge-large-files = !bash ~/.bin/purge-large-files.sh
   update            = !bash ~/.bin/update.sh
-  back-to           = !perl ~/.bin/back-to.sh
+  back-to           = !bash ~/.bin/back-to.sh
 [include]
   path = ~/.git-local
