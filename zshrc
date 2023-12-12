@@ -35,7 +35,6 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-completions
 EOBUNDLES
 
-# antigen theme tjkirch
 antigen theme romkatv/powerlevel10k
 
 export EDITOR="vim"

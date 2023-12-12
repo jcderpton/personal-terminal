@@ -75,7 +75,7 @@ syntax enable
 set tabstop=2
 set shiftwidth=2
 set t_Co=256
-set background=dark
+set background=light
 set autoread
 set ignorecase
 set smartcase
@@ -83,6 +83,12 @@ set incsearch
 set expandtab
 set smarttab
 set nowrap
+
+" Do special stuff with different filetypes
+augroup my_filetypes
+  autocmd!
+  autocmd FileType go setlocal noexpandtab
+augroup END
 
 colorscheme solarized
 highlight Normal ctermbg=NONE
